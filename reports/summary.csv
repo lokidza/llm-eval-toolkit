@@ -1,0 +1,5 @@
+model,mode,n,m1,m2,m3,m4,m5,m6,q_mean,q_min,q_max,high,satisfactory,unsatisfactory,unusable,reproducible
+Grok,few_shot,18,100.0,64.1,87.4,53.7,71.7,80.0,77.4,55.5,96.0,7,8,3,0,True
+Grok,zero_shot,19,100.0,69.7,77.0,22.8,87.4,89.7,75.1,64.1,82.4,5,14,0,0,False
+Gemini,zero_shot,18,100.0,70.1,40.1,48.1,76.1,83.3,71.7,39.3,84.9,4,11,2,1,False
+Gemini,few_shot,18,100.0,63.7,44.2,53.7,71.1,83.3,71.0,41.0,81.3,3,13,2,0,False

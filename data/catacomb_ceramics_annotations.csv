@@ -1,0 +1,74 @@
+model,mode,item_id,features_described,term_points,interpretation_level,calibration_penalties,hallucination_penalties,reference_q,note
+Grok,zero_shot,vessel_01,12,14,1,1.0,1.0,70.1,Системна відмова від атрибуції
+Grok,zero_shot,vessel_02,12,19,1,0.0,0.0,81.3,Найкраще zero-shot у серії 1-7
+Grok,zero_shot,vessel_03,12,18,1,0.0,0.0,80.3,Braid патерн вперше
+Grok,zero_shot,vessel_04,12,15,1,1.0,0.5,72.7,Аплікація пропущена
+Grok,zero_shot,vessel_05,12,18,2,1.0,1.0,79.3,Перша атрибуція в серії
+Grok,zero_shot,vessel_06,12,12,1,1.0,0.0,71,Найнижчий М2 у серії
+Grok,zero_shot,vessel_07,12,17,1,0.0,0.0,79.2,Межа з Високою якістю
+Grok,zero_shot,vessel_08,12,18,1,0.0,0.0,80.3,Коректна техніка і зони
+Grok,zero_shot,vessel_09,12,13,0,1.0,1.0,64.1,Критична помилка мотиву→атрибуція
+Grok,zero_shot,vessel_10,12,17,0,1.0,1.0,68.2,Двічі поспіль Ingul без контексту
+Grok,zero_shot,vessel_11,12,14,0,0.0,1.0,68.1,Та сама посудина що №6; фестони знову пропущені
+Grok,zero_shot,vessel_15,12,17,0,0.0,1.0,71.2,5й поспіль Ingul без контексту
+Grok,zero_shot,vessel_20,12,19,1,1.0,0.0,78.3,Comb stamp правильно; тип посудини хибний
+Grok,zero_shot,vessel_21,12,20,1,0.0,0.0,82.4,Округла база — нетипово; мотив не читається
+Grok,zero_shot,vessel_22,12,16,0,0.0,0.0,73.2,Cord ✅; мотив частково; без атрибуції
+Grok,zero_shot,vessel_23,12,18,0,0.0,0.0,75.3,Техніка impressed замість cord; Ingul через circular impressions
+Grok,zero_shot,vessel_24,12,15,1,1.0,0.0,74.2,Техніка combined ✅; атрибуція Ingul/transitional ≈ еталону
+Grok,zero_shot,vessel_25,12,18,1,0.0,0.0,80.3,Добра термінологія; без атрибуції
+Grok,zero_shot,vessel_26,12,20,0,0.0,0.0,77.4,Лише ZS; FS відсутній
+Grok,few_shot,vessel_01,12,13,2,3.0,1.0,69.7,Few-shot ефект навіювання шнуру
+Grok,few_shot,vessel_02,12,13,2,2.0,1.0,72.7,Системний патерн: шнур без підтвердження
+Grok,few_shot,vessel_03,12,18,2,0.0,0.0,86.9,Шнур реально є → few-shot спрацював
+Grok,few_shot,vessel_04,12,10,2,3.0,0.0,69.5,Фреймворк не містить аплікацію як пріоритет
+Grok,few_shot,vessel_05,12,20,3,1.0,1.0,87.9,М6 скориговано: посилання з промпту
+Grok,few_shot,vessel_06,12,12,1,1.0,1.0,69.6,Ланцюгова помилка мотив→атрибуція
+Grok,few_shot,vessel_07,12,22,3,0.0,0.0,96,М6 скориговано: посилання з промпту
+Grok,few_shot,vessel_08,12,11,0,2.0,2.0,57.6,Катастрофічна деградація: ZS=80→FS=55.7
+Grok,few_shot,vessel_09,12,13,0,2.0,2.0,59.7,Few-shot cord-галюцинація підтверджується
+Grok,few_shot,vessel_10,12,18,1,0.0,1.0,78.9,Few-shot покращив: ZS=68→FS=77 (+9)
+Grok,few_shot,vessel_11,12,15,1,0.0,0.0,78.7,Few-shot покращив: ZS=67.8→FS=76.9 (+9.1)
+Grok,few_shot,vessel_15,12,14,2,1.0,1.0,76.7,Few-shot покращив: ZS=71→FS=74.8 (+3.8)
+Grok,few_shot,vessel_20,12,9,0,2.0,2.0,55.5,FS cord-галюцинація: incised→cord; Ingul→Donetsk
+Grok,few_shot,vessel_21,12,20,2,0.0,0.0,88.9,FS виправив і покращив ZS: Donetsk late Q=88.9
+Grok,few_shot,vessel_22,12,16,2,0.0,0.0,84.8,FS підтвердив ZS: Donetsk late Q=84.8
+Grok,few_shot,vessel_23,12,20,3,0.0,0.0,93.9,Найвищий Q серії 20-26: Q=93.9
+Grok,few_shot,vessel_24,12,17,2,0.0,0.0,85.8,FS покращив ZS: Ingul/transitional ✅
+Grok,few_shot,vessel_25,12,16,1,0.0,0.0,79.8,FS слабший за ZS тут: відмова від атрибуції
+Gemini,zero_shot,vessel_01,12,7,0,4,3.0,39.3,Найнижчий Q серії — ланцюгова катастрофа
+Gemini,zero_shot,vessel_02,12,16,1,0.0,0.0,72.7,Хороше калібрування; cord не домінантна
+Gemini,zero_shot,vessel_03,12,21,2,0.0,0.0,82.9,Найкращий результат 1-7; М2=87.5
+Gemini,zero_shot,vessel_04,12,17,2,1.0,0.0,75.7,Аплікація знову пропущена як і у Grok
+Gemini,zero_shot,vessel_05,12,19,3,1.0,1.0,79.8,Перший М4=100 у Gemini ZS; Z-twist проблема
+Gemini,zero_shot,vessel_06,12,17,1,1.0,1.0,67.7,Хибне типологічне знання: festoons≠Lower Dnipro
+Gemini,zero_shot,vessel_07,12,21,3,1.0,0.0,84.9,Найвищий Q серії: 90.1
+Gemini,zero_shot,vessel_08,12,16,2,0.0,0.0,77.7,БЕЗ повного ЕТАЛОНУ; гарне калібрування
+Gemini,zero_shot,vessel_09,12,22,1,0.0,0.0,78.9,М2=91.7 — найвища точність термінології у ZS
+Gemini,zero_shot,vessel_10,12,19,1,1.0,0.0,72.8,Everted патерн повторюється
+Gemini,zero_shot,vessel_11,12,21,3,1.0,1.0,81.9,З-twist знову; але атрибуція бездоганна
+Gemini,zero_shot,vessel_15,12,24,1,0.0,0.0,81,М2=100 — перший ідеальний результат
+Gemini,zero_shot,vessel_20,12,16,2,0.0,0.0,77.7,
+Gemini,zero_shot,vessel_21,12,13,2,0.0,0.0,74.6,
+Gemini,zero_shot,vessel_22,12,11,0,2.0,2.0,50.5,
+Gemini,zero_shot,vessel_23,12,13,2,1.0,0.0,71.6,
+Gemini,zero_shot,vessel_24,12,17,0,1.0,1.0,62.7,
+Gemini,zero_shot,vessel_25,12,13,0,1.0,1.0,58.6,
+Gemini,few_shot,vessel_01,12,8,0,4,3.0,41,Та сама катастрофа що ZS №1
+Gemini,few_shot,vessel_02,12,14,0,1.0,2.0,57.2,Few-shot cord-галюцинація
+Gemini,few_shot,vessel_03,12,18,2,1.0,0.0,77.4,Funnel-shaped патерн вперше
+Gemini,few_shot,vessel_04,12,13,1,1.0,1.0,64.2,Аплікація знову пропущена
+Gemini,few_shot,vessel_05,12,19,2,1.0,0.0,78.4,ZS(Donetsk)→FS(transitional)
+Gemini,few_shot,vessel_06,12,17,3,1.0,0.0,81.3,Найбільший приріст +13.0
+Gemini,few_shot,vessel_07,12,13,2,2.0,0.0,69.2,Найбільша регресія ZS(90.1)→FS(73.8)
+Gemini,few_shot,vessel_08,12,12,1,1.0,1.0,63.1,Few-shot cord-галюцинація
+Gemini,few_shot,vessel_09,12,15,2,1.0,1.0,71.3,ZS(84.2)→FS(75.9): регресія
+Gemini,few_shot,vessel_10,12,20,2,1.0,0.0,79.5,ZS(78.0)→FS(84.1): покращення
+Gemini,few_shot,vessel_11,12,18,2,0.0,0.0,80.4,ZS(87.1)→FS(85.0): майже рівно
+Gemini,few_shot,vessel_15,12,14,2,2.0,1.0,67.2,ZS(86.3)→FS(71.8): регресія
+Gemini,few_shot,vessel_20,12,16,2,0.0,0.0,78.3,
+Gemini,few_shot,vessel_21,12,15,2,0.0,0.0,77.3,
+Gemini,few_shot,vessel_22,12,13,1,1.0,1.0,64.2,
+Gemini,few_shot,vessel_23,12,15,1,1.0,0.0,69.2,
+Gemini,few_shot,vessel_24,12,18,2,0.0,0.0,80.4,
+Gemini,few_shot,vessel_25,12,17,2,0.0,0.0,79.3,

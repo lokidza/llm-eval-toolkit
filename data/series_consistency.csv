@@ -1,0 +1,5 @@
+model,mode,jaccard
+Grok,zero_shot,0.77
+Grok,few_shot,0.874
+Gemini,zero_shot,0.401
+Gemini,few_shot,0.442

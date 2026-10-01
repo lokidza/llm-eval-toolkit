@@ -1,0 +1,12 @@
+{
+  "vessel_03": [
+    ["vessel_type:pot", "technique:cord", "motif:concentric_circles", "zone:body", "attribution:donetsk"],
+    ["vessel_type:pot", "technique:cord", "motif:concentric_circles", "zone:body", "attribution:donetsk"],
+    ["vessel_type:pot", "technique:cord", "motif:spiral", "zone:body", "attribution:transitional"]
+  ],
+  "vessel_09": [
+    ["vessel_type:pot", "technique:comb_stamp", "motif:herringbone", "zone:shoulder"],
+    ["vessel_type:pot", "technique:cord", "motif:herringbone", "zone:shoulder"],
+    ["vessel_type:bowl", "technique:comb_stamp", "motif:herringbone", "zone:shoulder", "attribution:ingul"]
+  ]
+}

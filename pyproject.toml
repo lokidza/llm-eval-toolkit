@@ -1,0 +1,11 @@
+[project]
+name = "llm-eval-toolkit"
+version = "0.1.0"
+description = "Expert-grounded evaluation of LLM answers with six task-specific metrics (M1-M6)"
+authors = [{ name = "Vasilisa Loki Brik" }]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
